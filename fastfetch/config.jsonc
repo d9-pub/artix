@@ -1,0 +1,21 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+  "logo": {
+    "source": "~/.config/fastfetch/*.png",
+    "height": 10,
+    "width": 20
+  },
+  "modules": [
+    "packages",
+    "disk",
+    "memory",
+    "uptime",
+    {
+      "type": "disk",
+      "key": "Age",
+      "folders": "/",
+      "format": "{days} days"
+    },
+    "break"
+  ]
+}
